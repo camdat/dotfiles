@@ -1,0 +1,19 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+alias hc='herbstclient'
+alias ls='ls --color=auto'
+alias vim='nvim'
+
+alias 216="cs ~/code/cse216/cse216_jaguars"
+alias 202="cs ~/code/cse202/"
+alias 280="cs ~/code/cse280/"
+alias playground="cs ~/code/playground/"
+alias bat="cat /sys/class/power_supply/BAT0/capacity"
+function cs () {
+    cd "$@" && ls
+}
+PS1='╓┄ \w\n╙┄ '
